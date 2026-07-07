@@ -1,56 +1,76 @@
 # Contributing to Satus
 
-First off, thank you for considering contributing to Satus! It's people like you
-that make Satus such a great community.
+First off, thank you for considering contributing to Satus! Contributors like you help build better tooling for the entire community.
 
-## Where do I go from here?
+To ensure a smooth collaboration, please review the following guidelines before submitting your contributions.
 
-If you've noticed a bug or have a feature request,
-[make one](https://github.com/satusdev/issues/new)! It's generally best if you
-get confirmation of your bug or approval for your feature request this way
-before starting to code.
+---
 
-### Fork & create a branch
+## 🗺️ How to Contribute
 
-If this is something you think you can fix, then fork Satus and create a branch
-with a descriptive name.
+### 1. Find or Report an Issue
+*   Check the [Issues Tracker](https://github.com/satusdev) in the relevant repository to see if the bug or feature is already being discussed.
+*   If not, open a new issue using the appropriate template (Bug Report or Feature Request).
+*   For security-related issues, please refer directly to our [Security Policy](https://github.com/satusdev/.github/blob/main/SECURITY.md) instead of opening a public issue.
 
-A good branch name would be (where issue #33 is the ticket you're working on):
+### 2. Fork & Create a Branch
+Fork the repository and create a branch off `main` (or the default branch of the repository). Use a clear and descriptive branch naming pattern:
+*   `feat/your-feature-name` for new features.
+*   `fix/bug-description` for bug fixes.
+*   `docs/doc-topic` for documentation updates.
 
+Example:
 ```bash
-git checkout -b 33-add-new-feature
+git checkout -b feat/add-gemini-model-selector
 ```
 
-### Get the style right
+### 3. Development & Standards
+*   **Code Style:** Adhere to the established styling, linting, and formatting rules of the specific repository (e.g., Prettier, ESLint, Ruff, or PHP CodeSniffer).
+*   **Testing:** Ensure all existing tests pass and write new tests covering your added features or bug fixes.
+*   **Documentation:** Update relevant markdown files, inline documentation, and comments if you introduce new configuration parameters, API options, or workflows.
 
-Your patch should follow the same conventions & pass the same code quality
-checks as the rest of the project.
+### 4. Commits & Conventional Commits
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification for all repositories. Ensure your commit messages use the following structure:
 
-### Make a Pull Request
+```
+<type>(<scope>): <short imperative summary>
 
-At this point, you should switch back to your master branch and make sure it's
-up to date with Satus's master branch:
-
-```bash
-git remote add upstream git@github.com:satusdev/satus.git
-git checkout master
-git pull upstream master
+[optional body describing the 'why']
 ```
 
-Then update your feature branch from your local copy of master, and push it!
+**Common Types:**
+*   `feat`: A new feature
+*   `fix`: A bug fix
+*   `docs`: Documentation changes
+*   `style`: Formatting, missing semi-colons, etc. (no production code changes)
+*   `refactor`: Refactoring production code (no new features or bug fixes)
+*   `test`: Adding missing tests or correcting existing tests
+*   `chore`: Updating build tasks, package manager configs, etc.
 
+**Example Commits:**
 ```bash
-git checkout 33-add-new-feature
-git rebase master
-git push --force origin 33-add-new-feature
+feat(client): integrate Gemini API fallback mechanism
+fix(auth): prevent token refresh on unauthorized route
 ```
 
-Finally, go to GitHub and make a Pull Request.
+### 5. Submit a Pull Request
+When your changes are ready, push your branch and open a Pull Request (PR) against the `main` branch.
+*   Fill out the PR template completely.
+*   Ensure the CI/CD pipeline builds successfully and passes all status checks.
+*   Reference the related issue(s) using GitHub's auto-linking keywords (e.g., `Closes #12`).
 
-### Keeping your Pull Request updated
+### 6. Code Review & Rebasing
+A maintainer will review your Pull Request. If updates are requested:
+1.  Make the changes in your local branch.
+2.  If the default branch has advanced, rebase your branch:
+    ```bash
+    git checkout main
+    git pull origin main
+    git checkout feat/your-feature-name
+    git rebase main
+    git push --force origin feat/your-feature-name
+    ```
 
-If a maintainer asks you to "rebase" your PR, they're saying that a lot of code
-has changed, and that you need to update your branch so it's easier to merge.
+---
 
-To learn more about rebasing and merging, check out this guide on
-[merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
+Thank you for your time and effort in making Satus better!
