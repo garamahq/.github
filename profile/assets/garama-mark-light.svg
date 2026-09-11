@@ -1,0 +1,9 @@
+<svg viewBox="0 0 120 90" width="120" height="90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="garama-mark" transform="translate(60, 42)">
+    
+    <circle cx="0" cy="-24" r="9.5" stroke="#CDB083" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M -48.00 0.00 L -29.93 0.00 A 13.00 13.00 0 0 1 -16.96 12.13 A 17.00 17.00 0 0 0 16.96 12.13 A 13.00 13.00 0 0 1 29.93 0.00 L 48.00 0.00" stroke="#F5F1E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M -48.00 9.50 L -29.93 9.50 A 3.50 3.50 0 0 1 -26.44 12.77 A 26.50 26.50 0 0 0 26.44 12.77 A 3.50 3.50 0 0 1 29.93 9.50 L 48.00 9.50" stroke="#CDB083" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  </g>
+</svg>

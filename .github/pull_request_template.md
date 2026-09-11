@@ -23,7 +23,7 @@ Describe the tests that you ran to verify your changes. Provide instructions so 
 
 ## Checklist
 
-- [ ] I have read the [CONTRIBUTING.md](https://github.com/satusdev/.github/blob/main/CONTRIBUTING.md) guidelines.
+- [ ] I have read the [CONTRIBUTING.md](https://github.com/garamahq/.github/blob/main/CONTRIBUTING.md) guidelines.
 - [ ] My code follows the style guidelines of this project.
 - [ ] I have performed a self-review of my own code.
 - [ ] I have commented my code, particularly in hard-to-understand areas.
